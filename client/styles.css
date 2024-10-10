@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Rounded 1c", Calibri, Tahoma, sans-serif;
+    overflow-x: clip;
+
+    --container-width: 920px;
+    --blue: hsl(238, 87%, 52%);
+    --red: hsl(4, 100%, 63%);
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    background-color: var(--red);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("/public/patterns/pattern-vermelha.jpg");
+    background-size: 1000px;
+    background-repeat: repeat;
+}
+
+.img-driver {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    pointer-events: none;
+}
+
+.logo-link {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.hero-text-container {
+    width: 100%;
+    max-width: var(--container-width);
+    display: flex;
+    padding: 52px 24px;
+}
+
+.hero-content {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+
+    h1 {
+        font-size: 120px;
+        line-height: 1;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+.btn-primary {
+    user-select: none;
+    width: fit-content;
+    padding: 12px 16px;
+    background-color: var(--blue);
+    border-radius: 999px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.content-container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 52px 24px;
+}
+
+.content-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px 0px rgba(224, 219, 191, 0.6);
+
+    img {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+    }
+
+    h3 {
+        font-weight: 900;
+        color: var(--blue);
+    }
+
+    .desc {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+    }
+
+    .price {
+        font-size: 1.25rem;
+        font-weight: 900;
+        color: var(--red);
+    }
+}
+
+.content-third {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
