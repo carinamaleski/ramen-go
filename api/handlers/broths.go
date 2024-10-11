@@ -2,15 +2,16 @@ package handlers
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 	"ramen-go/internal/models"
 )
 
 var broths = []models.Broth{
-	{ID: 1, ImageInactive: "inactive1.png", ImageActive: "active1.png", Name: "Salt", Description: "Simple like the seawater, nothing more", Price: 10},
-	{ID: 2, ImageInactive: "inactive2.png", ImageActive: "active2.png", Name: "Shoyu", Description: "The good old and traditional soy sauce", Price: 10},
-	{ID: 3, ImageInactive: "inactive3.png", ImageActive: "active3.png", Name: "Miso", Description: "Paste made of fermented soybeans", Price: 12},
+	{ID: 1, Name: "Salt", ImageInactive: "salt-inactive.svg", ImageActive: "salt-active.svg", Description: "Simple like the seawater, nothing more", Price: 10},
+	{ID: 2, Name: "Shoyu", ImageInactive: "shoyu-inactive.svg", ImageActive: "shoyu-active.svg", Description: "The good old and traditional soy sauce", Price: 10},
+	{ID: 3, Name: "Miso", ImageInactive: "miso-inactive.svg", ImageActive: "miso-active.svg", Description: "Paste made of fermented soybeans", Price: 12},
 }
 
 func GetBroths(w http.ResponseWriter, r *http.Request) {
@@ -20,5 +21,6 @@ func GetBroths(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Content-Type", "application/json")
+	fmt.Println("Sending broths data:", broths)
 	json.NewEncoder(w).Encode(broths)
 }

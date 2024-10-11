@@ -45,7 +45,7 @@ func CreateOrder(w http.ResponseWriter, r *http.Request) {
 	newOrder := models.OrderResponse{
 		ID:          orderID,
 		Description: "Salt and Chasu Ramen",
-		Image:       "order.png",
+		Image:       "public/images/lamen-miso.png",
 	}
 
 	orders = append(orders, newOrder)

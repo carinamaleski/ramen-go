@@ -14,11 +14,9 @@
     </head>
     <body>
         <main>
-            <!-- <script src="app.js"></script> -->
             <section class="hero">
                 <a class="logo-link" href="./index.html">
-                    Ramen go
-                    <!-- <img src=".src/assets/icons/_____" alt="logo" /> -->
+                    <img src="/public/images/logo.svg" />
                 </a>
                 <img
                     class="img-driver"
@@ -27,7 +25,13 @@
                 />
                 <div class="hero-text-container">
                     <div class="hero-content">
-                        <h1>Go!</h1>
+                        <hgroup>
+                            <img
+                                class="japanese-svg"
+                                src="/public/images/japanese.svg"
+                            />
+                            <h1>Go!</h1>
+                        </hgroup>
                         <p>
                             Enjoy a good ramen in the comfort of your house.
                             Create your own ramen and choose your favorite
@@ -38,54 +42,58 @@
                 </div>
             </section>
             <section class="content-container">
-                <section class="content-first">
+                <section class="content-cards">
                     <hgroup class="hgroup">
                         <h2>First things first: select your favorite broth.</h2>
                         <p>It will give the whole flavor on your ramen soup.</p>
                     </hgroup>
-                    <div class="card-container">
-                        <div class="card">
+                    <div class="broth-card-container"></div>
+                </section>
+                <section class="content-cards">
+                    <hgroup class="hgroup">
+                        <h2>It’s time to choose (or not) your meat!</h2>
+                        <p>
+                            Some people love, some don’t. We have options for
+                            all tastes.
+                        </p>
+                    </hgroup>
+                    <div class="protein-card-container">
+                        <!-- <div class="card">
                             <img />
-                            <h3>Salt</h3>
-                            <p class="desc">Simple like the sweater...</p>
-                            <p class="price">1000</p>
+                            <h3>Chasu</h3>
+                            <p class="desc">
+                                A sliced flavourful pork meat with a selection
+                                of season vegetables.
+                            </p>
+                            <p class="price">US$ 10</p>
                         </div>
                         <div class="card">
                             <img />
-                            <h3>Salt</h3>
-                            <p class="desc">Simple like the sweater...</p>
-                            <p class="price">1000</p>
+                            <h3>Yasai Vegetarian</h3>
+                            <p class="desc">
+                                A delicious vegetarian lamen with a selection of
+                                season vegetables.
+                            </p>
+                            <p class="price">US$ 10</p>
                         </div>
                         <div class="card">
                             <img />
-                            <h3>Salt</h3>
-                            <p class="desc">Simple like the sweater...</p>
-                            <p class="price">1000</p>
-                        </div>
+                            <h3>Karaague</h3>
+                            <p class="desc">
+                                Three units of fried chicken, moyashi, ajitama
+                                egg and other vegetables.
+                            </p>
+                            <p class="price">US$ 12</p>
+                        </div> -->
                     </div>
                 </section>
-
-                <!-- <div class="card-container" id="broth"></div>
-
-                <div class="main-text">
-                    <h2>It’s time to choose (or not) your meat!</h2>
-                    <p>
-                        Some people love, some don’t. We have options for all
-                        tastes.
-                    </p>
-                </div>
-
-                <div class="card-container" id="protein"></div>
-
-                <div class="btn-center">
-                    ********************
-                    <a class="btn arrow inactive" id="order">Place order</a>
-                </div> -->
-
-                <section class="content-third">
-                    <a href="#main" class="btn-primary">Order now</a>
+                <section class="content-button">
+                    <button id="placeOrderBtn" class="btn-primary">
+                        Place my order
+                    </button>
                 </section>
             </section>
+            <script src="app.js"></script>
         </main>
     </body>
 </html>
