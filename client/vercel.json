@@ -1,9 +1,0 @@
-{
-    "builds": [
-      { "src": "client/index.js", "use": "@vercel/next" }
-    ],
-    "routes": [
-      { "src": "/client/(.*)", "dest": "/client/$1" },
-      { "src": "/(.*)", "dest": "/pages/$1" }
-    ]
-  }
