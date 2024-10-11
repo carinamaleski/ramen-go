@@ -42,7 +42,7 @@ async function getBroths() {
       card.innerHTML = `
         <input type="radio" name="broth" value="${broth.id}" class="card-radio">
         <div class="card-content">
-          <img src="/public/icons/${broth.imageInactive}" alt="${broth.name}">
+          <img src="./public/icons/${broth.imageInactive}" alt="${broth.name}">
           <h3>${broth.name}</h3>
           <p class="desc">${broth.description}</p>
           <p class="price">US$ ${broth.price}</p>
@@ -70,7 +70,7 @@ async function getProteins() {
       card.innerHTML = `
         <input type="radio" name="protein" value="${protein.id}" class="card-radio">
         <div class="card-content">
-          <img src="/public/icons/${protein.imageInactive}" alt="${protein.name}">
+          <img src="./public/icons/${protein.imageInactive}" alt="${protein.name}">
           <h3>${protein.name}</h3>
           <p class="desc">${protein.description}</p>
           <p class="price">US$ ${protein.price}</p>
