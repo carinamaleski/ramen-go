@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/carinamaleski/ramen-go/api/handlers"
 	"net/http"
-	"ramen-go/handlers"
 )
 
 func main() {

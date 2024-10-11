@@ -3,9 +3,9 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/carinamaleski/ramen-go/api/internal/models"
 	"net/http"
 	"os"
-	"ramen-go/internal/models"
 )
 
 var proteins = []models.Protein{

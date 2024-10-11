@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/carinamaleski/ramen-go/api/internal/models"
 	"net/http"
 	"os"
-	"ramen-go/internal/models"
 )
 
 var orders []models.OrderResponse
