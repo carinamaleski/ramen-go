@@ -1,5 +1,5 @@
 const API_KEY = "ZtVdh8XQ2U8pWI2gmZ7f796Vh8GllXoN7mr0djNf";
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://ramen-go-5104.onrender.com";
 const BROTHS_ENDPOINT = `${API_BASE_URL}/broths`;
 const PROTEINS_ENDPOINT = `${API_BASE_URL}/proteins`;
 const ORDERS_ENDPOINT = `${API_BASE_URL}/orders`;
